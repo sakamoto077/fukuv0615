@@ -3,9 +3,9 @@ namespace fukuv0615
     public partial class Form1 : Form
     {
         static Random rand = new Random();
-        int ans = $ "{rand.Next(0, 100)}";
-        int count = rand.Next(0);
-
+        int ans = rand.Next(0, 101);
+        int count = 0;
+        int guees;
         public Form1()
         {
             InitializeComponent();
@@ -20,7 +20,7 @@ namespace fukuv0615
         {
             count++;
             MessageBox.Show("{count}‰ñ–Ú‚Ì’§í");
-            int guees;
+          
 
             if (ans == guees)
             {
