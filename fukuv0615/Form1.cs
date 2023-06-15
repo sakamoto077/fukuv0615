@@ -6,6 +6,8 @@ namespace fukuv0615
         int ans = rand.Next(0, 101);
         int count = 0;
         int guees;
+        private string countTostring;
+
         public Form1()
         {
             InitializeComponent();
@@ -19,18 +21,20 @@ namespace fukuv0615
         private void button1_Click(object sender, EventArgs e)
         {
             count++;
-            MessageBox.Show("{count}‰ñ–Ú‚Ì’§í");
-          
+            MessageBox.Show(countTostring + "‰ñ–Ú‚Ì’§í");
+            int guees = int.Parse(textBox1.Text);
 
             if (ans == guees)
             {
                 MessageBox.Show("Bingo!!");
+                count = 0;
+                ans = rand.Next(101);
             }
-            if (ans <= guees)
+            if (ans < guees)
             {
                 MessageBox.Show("Less");
             }
-            if (ans >= guees)
+            if (ans > guees)
             {
                 MessageBox.Show("Greater");
             }

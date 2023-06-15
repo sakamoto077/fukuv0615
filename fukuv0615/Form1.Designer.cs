@@ -34,7 +34,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(294, 190);
+            textBox1.Location = new Point(359, 159);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(100, 23);
             textBox1.TabIndex = 0;
@@ -43,7 +43,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(432, 130);
+            button1.Location = new Point(375, 188);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 1;
